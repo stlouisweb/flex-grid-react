@@ -9,6 +9,6 @@ export default () => (
     <pre>npm install --save flex-grid-react</pre>
     <p>then</p>
     <pre>import FlexGrid from 'flex-grid-react';</pre>
-    <p>Have a look at the <a href='/flex-grid-react/?selectedKind=FlexGrid&selectedStory=basic%20example&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook%2Factions%2Factions-panel'>FlexGrid stories</a> for examples and documentation</p>
+    <p>Have a look at the <a href='https://stlouisweb.github.io/flex-grid-react/?selectedKind=FlexGrid&selectedStory=basic%20example&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook%2Factions%2Factions-panel'>FlexGrid stories</a> for examples and documentation</p>
   </div>
 )
