@@ -2,7 +2,7 @@
 
 > A responsive grid for ReactJS using CSS flexbox.
 
-[![NPM](https://img.shields.io/npm/v/flex-grid.svg)](https://www.npmjs.com/package/flex-grid) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/flex-grid-react.svg)](https://www.npmjs.com/package/flex-grid-react) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 

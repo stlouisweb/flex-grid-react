@@ -1,10 +1,11 @@
 {
   "name": "flex-grid-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A responsive grid using CSS flexbox.",
   "author": "stlouisweb",
   "license": "MIT",
   "repository": "stlouisweb/flex-grid-react",
+  "homepage": "https://stlouisweb.github.io/flex-grid-react/",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
