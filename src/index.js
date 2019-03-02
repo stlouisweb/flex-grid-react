@@ -3,24 +3,7 @@ import PropTypes from 'prop-types'
 
 import styles from './styles.css'
 
-export default class FlexGrid extends Component {
-  static propTypes = {
-    align: PropTypes.string,
-    justify: PropTypes.string,
-    container: PropTypes.bool,
-    item: PropTypes.bool,
-    children: PropTypes.oneOfType([
-      PropTypes.arrayOf(PropTypes.node),
-      PropTypes.node
-    ]).isRequired,
-    columns: PropTypes.shape({
-      small: PropTypes.number,
-      medium: PropTypes.number,
-      large: PropTypes.number
-    }),
-    gutter: PropTypes.number
-  }
-
+class FlexGrid extends Component {
   getClassesFromProps() {
     const {
       container,
@@ -90,3 +73,38 @@ export default class FlexGrid extends Component {
     )
   }
 }
+
+FlexGrid.propTypes = {
+  /**
+   * Sets the align-content property for a container.
+   */
+  align: PropTypes.string,
+  /** Sets the justify-content property for a container. */
+  justify: PropTypes.string,
+  /** Containers contain items. */
+  container: PropTypes.bool,
+  /** Items can span a number of columns, and can also be containers, with other items as children. */
+  item: PropTypes.bool,
+  /** Child nodes of the FlexGrid component. */
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]).isRequired,
+  /** Columns is an object with the keys 'small', 'medium', and 'large', the value for each is a number specifying the number of columns the item spans.
+   *  all breakpoints are optional, if columns aren't specified then the default is small-12.
+   */
+  columns: PropTypes.shape({
+    small: PropTypes.number,
+    medium: PropTypes.number,
+    large: PropTypes.number
+  }),
+  /** Sets the gutter space between columns in pixels. */
+  gutter: PropTypes.number
+}
+
+FlexGrid.defaultProps = {
+  columns: { small: 12 },
+  gutter: 16
+}
+
+export default FlexGrid
